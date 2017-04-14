@@ -32,3 +32,4 @@ if __name__ == '__main__':
         DeleteFolderLessThanThresh(root_dir, 10)
     else:
         print "other thing to be done"
+        print "hahaha"
