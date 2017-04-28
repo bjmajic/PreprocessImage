@@ -21,9 +21,9 @@ opt = {
     'inputHigh': 112,
     'net': 'ResNet',
 	'rootdir': r'F:\china_face\Asian_face',
-	'calcuFeature': False,
-	'findBestBaseImg': True,
-	'filteImage': True,
+	'calcuFeature': True,
+	'findBestBaseImg': False,
+	'filteImage': False,
 }
 
 if opt['caffeMode'] == 'cpu':

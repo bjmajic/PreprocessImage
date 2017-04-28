@@ -32,6 +32,8 @@ def getFileList(dirname):
     imgList = os.listdir(dirname)
     if 'Thumbs.db' in imgList:
         imgList.remove('Thumbs.db')
+    if 'record.txt' in imgList:
+        imgList.remove('record.txt')
     return imgList
 
 
@@ -304,7 +306,7 @@ def CreateTrainTest(root, train_port=1.0, test_port=0.1):
 if __name__ == '__main__':
     # str = [u'F:\Asianperson\人脸提交给王雷20170113下午']
     # root_dir = r'D:\image\rrr'
-    root_dir = r'F:\WebFace2'
+    root_dir = r'E:\new_webface'
     # CreateTrainTest(root_dir, 0.95, 0.05)
     # createPairs(root_dir, 10, 20)
     CreateDataListNoArg(root_dir, 1.0, 0.1)
